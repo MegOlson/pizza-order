@@ -22,7 +22,7 @@
 $(document).ready(function(){
   $("#choose-size").click(function(e){
     e.preventDefault();
-    var size = $("")
+    // var size = $("")
     $("#base").show();
     $("#size").hide();
   });
@@ -30,5 +30,10 @@ $(document).ready(function(){
     e.preventDefault();
     $("#toppings").show();
     $("#base").hide();
+  });
+  $("#showTotal").click(function(e){
+    e.preventDefault();
+    $("#total").show();
+    $("#toppings").hide();
   });
 });

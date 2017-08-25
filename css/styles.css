@@ -4,3 +4,20 @@
 #base {
   display: none;
 }
+#total {
+  display: none;
+}
+body {
+  background-color: teal;
+}
+.jumbotron {
+  background-color: gold;
+  text-align: center;
+  margin-top: 40px;
+}
+form {
+  margin: 20px;
+}
+.btn {
+  margin: 20px;
+}
