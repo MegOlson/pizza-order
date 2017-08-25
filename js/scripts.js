@@ -50,5 +50,6 @@ $(document).ready(function(){
     var newPizza = new Pizza(size, crust, sauce, cheese, toppings);
     newPizza.findPrice();
     $("#total").show();
+    $("form").hide();
   });
 });

@@ -4,15 +4,23 @@
 }
 body {
   background-color: teal;
+  font-family: 'Poppins', sans-serif;
 }
 .jumbotron {
-  background-color: gold;
+  background-color: #c49e87;
   text-align: center;
   margin-top: 40px;
 }
 form {
   margin: 20px;
+  display: block;
+  margin-left: 30%;
+
 }
 .btn {
   margin: 20px;
+  background-color: #c49e87;
+}
+.form-control {
+  width: 200px;
 }
