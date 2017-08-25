@@ -13,72 +13,57 @@
       <div class="jumbotron">
         <h1>Pizza Palace</h1>
       </div>
-      <!-- <div class="menu">
-        <h3>Pizza Palace Classics</h3>
-        <h4>Choose from a variety of our palace favorites:</h4>
-        <div class="row">
-          <div class="col-md-6">
-            <ul>
-              <li>Margharita Pizza</li> <button type="button" class="btn">Add</button>
-                <li>Fresh tomatoes, mozzerella, and basil. A classic and Pizza Palace bestseller.</li>
-              <li>Meat Lovers</li> <button type="button" class="btn">Add</button>
-                <li>Chicken, italian sausage, and pepperoni atop a hearty layer of mozerella.</li>
-              <li>Garden Vegetable</li> <button type="button" class="btn">Add</button>
-                <li>Spinach, green peppers, zucchini, broccoli, olives, and sun-dreid tomatoes.</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h5>Small: $5     Medium: $7    Large: $10</h5>
-            <h5>Small: $7     Medium: $9    Large: $12</h5>
-            <h5>Small: $6     Medium: $8    Large: $11</h5>
-          </div>
-        </div>
-      </div> -->
-      <form id="toppings">
+      <form id="base">
         <h3>Build your own pizza:</h3>
+        <h3>Choose a crust, sauce, and cheese:</h3>
         <div class="form-group">
-          <h3>Choose a crust, sauce, and cheese:</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <h4>Crust:</h4>
-                <input type="checkbox" name="topping" value="classic-crust">Classic Crust<br>
-                <input type="checkbox" name="topping" value="thin-crust">Thin Crust<br>
-                <input type="checkbox" name="topping" value="gluten-free-crust">Gluten Free Crust (+$2.00)<br>
-              <h4>Pizza Sauce:</h4>
-               <input type="checkbox" name="topping" value="marinara">Marinera<br>
-               <input type="checkbox" name="topping" value="pesto">Pesto<br>
-               <input type="checkbox" name="topping" value="olive-oil-herb">Olive Oil with herbs<br>
+          <h4>Crust:</h4>
+          <select class="form-control" id="crust">
+            <option>Classic Crust</option>
+            <option>Thin Crust</option>
+            <option>Gluten Free Crust (+$2.00)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Crust:</h4>
+          <select class="form-control" id="base">
+            <option>Marinara</option>
+            <option>Pesto</option>
+            <option>Olive Oil and Herb</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Cheese:</h4>
+          <select class="form-control" id="crust">
+            <option>Mozzerella</option>
+            <option>Cheddar</option>
+            <option>Goat Cheese</option>
+          </select>
+        </div>
+        <button type="button" name="button" class="btn">Add Toppings:</button>
+      </form>
+      <form id="toppings">
+       <h3>Choose any toppings you like (+$.25 each)</h3>
+       <h4>Meat:</h4>
+        <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+        <input type="checkbox" name="topping" value="sausage">Sausage<br>
+        <input type="checkbox" name="topping" value="chicken">Chicken<br>
 
-              <h4>Cheese:</h4>
-               <input type="checkbox" name="topping" value="mozzerella">Mozzerella<br>
-               <input type="checkbox" name="topping" value="cheddar">Cheddar<br>
-               <input type="checkbox" name="topping" value="goat-cheese">Goat Cheese<br>
-             </div>
-             <div class="col-md-6">
-               <h3>Choose any toppings you like (+$.25 each)</h3>
-               <h4>Meat:</h4>
-                <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
-                <input type="checkbox" name="topping" value="sausage">Sausage<br>
-                <input type="checkbox" name="topping" value="chicken">Chicken<br>
-              </div>
-              <h4>Vegetables:</h4>
-               <input type="checkbox" name="topping" value="green-peppers">Green Peppers<br>
-               <input type="checkbox" name="topping" value="artichoke-hearts">Artichoke Hearts<br>
-               <input type="checkbox" name="topping" value="zucchini">Zucchini<br>
-               <input type="checkbox" name="topping" value="broccoli">Broccoli<br>
-               <input type="checkbox" name="topping" value="sun-dried-tomatoes">Sun Dried Tomatoes<br>
-               <input type="checkbox" name="topping" value="spinach">Spinach<br>
-               <input type="checkbox" name="topping" value="olives">Olives<br>
-               <input type="checkbox" name="topping" value="roasted-red-pepper">Roasted Red Pepper<br>
+      <h4>Vegetables:</h4>
+       <input type="checkbox" name="topping" value="green-peppers">Green Peppers<br>
+       <input type="checkbox" name="topping" value="artichoke-hearts">Artichoke Hearts<br>
+       <input type="checkbox" name="topping" value="zucchini">Zucchini<br>
+       <input type="checkbox" name="topping" value="broccoli">Broccoli<br>
+       <input type="checkbox" name="topping" value="sun-dried-tomatoes">Sun Dried Tomatoes<br>
+       <input type="checkbox" name="topping" value="spinach">Spinach<br>
+       <input type="checkbox" name="topping" value="olives">Olives<br>
+       <input type="checkbox" name="topping" value="roasted-red-pepper">Roasted Red Pepper<br>
 
-              <h4>Other Toppings:</h4>
-               <input type="checkbox" name="topping" value="pine-nuts">Pine Nuts<br>
-               <input type="checkbox" name="topping" value="fresh-herbs">Fresh Herbs<br>
-               <input type="checkbox" name="topping" value="balsamic-drizzle">Balsamic Drizzle<br>
-             </div>
-           </div>
-         </div>
-       <button type="submit">Submit Order</button>
+      <h4>Other Toppings:</h4>
+       <input type="checkbox" name="topping" value="pine-nuts">Pine Nuts<br>
+       <input type="checkbox" name="topping" value="fresh-herbs">Fresh Herbs<br>
+       <input type="checkbox" name="topping" value="balsamic-drizzle">Balsamic Drizzle<br>
+       <button type="submit" class="btn">Submit Order</button>
      </form>
     </div>
   </body>
