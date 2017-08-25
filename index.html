@@ -13,7 +13,7 @@
       <div class="jumbotron">
         <h1>Pizza Palace</h1>
       </div>
-      <form id="order">
+      <form class="order">
         <h3>Build your own pizza:</h3>
         <select class="form-control" id="chooseSize">
           <option>Small</option>
@@ -43,26 +43,28 @@
             <option>No Cheese</option>
           </select>
         </div>
-        <div class="form-group" class="toppings">
-         <h3>Choose any toppings you like (+ $1 each)</h3>
-         <h4>Meat:</h4>
-          <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
-          <input type="checkbox" name="topping" value="sausage">Sausage<br>
-          <input type="checkbox" name="topping" value="chicken">Chicken<br>
+        </form>
+        <form class="topping">
+          <div class="form-group">
+           <h3>Choose any toppings you like (+ $1 each)</h3>
+           <h4>Meat:</h4>
+            <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+            <input type="checkbox" name="topping" value="sausage">Sausage<br>
+            <input type="checkbox" name="topping" value="chicken">Chicken<br>
+          </div>
+          <div class="form-group">
+            <h4>Vegetables:</h4>
+             <input type="checkbox" name="topping" value="green-peppers">Green Peppers<br>
+             <input type="checkbox" name="topping" value="artichoke-hearts">Artichoke Hearts<br>
+             <input type="checkbox" name="topping" value="zucchini">Zucchini<br>
+             <input type="checkbox" name="topping" value="spinach">Spinach<br>
+             <input type="checkbox" name="topping" value="roasted-red-pepper">Roasted Red Pepper<br>
+            <button type="button" class="btn" id="showTotal">See my total</button>
+          </form>
         </div>
-        <div class="form-group" class="toppings">
-          <h4>Vegetables:</h4>
-           <input type="checkbox" name="topping" value="green-peppers">Green Peppers<br>
-           <input type="checkbox" name="topping" value="artichoke-hearts">Artichoke Hearts<br>
-           <input type="checkbox" name="topping" value="zucchini">Zucchini<br>
-           <input type="checkbox" name="topping" value="spinach">Spinach<br>
-           <input type="checkbox" name="topping" value="roasted-red-pepper">Roasted Red Pepper<br>
-           <button type="button" class="btn" id="showTotal">See my total</button>
-         </div>
-       </form>
        <div id="total">
-         <h4><span class="order"></span></h4>
+         <h4>Your total is: $ <span class="orderReceipt"></span></h4>
        </div>
     </div>
-  </body>
+  </body>"
 </html>
